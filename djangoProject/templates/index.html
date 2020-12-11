@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ClientBank</title>
+</head>
+<body>
+    <h1>Добро пожаловать на страницу Банка</h1>
+    <h3>Пожалуйста, введите свои данные</h3>
+    <form method="POST">
+        {% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+    <input type="submit" value="Send" >
+</form>
+</body>
+</html>
